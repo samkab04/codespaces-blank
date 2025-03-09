@@ -15,7 +15,7 @@ cout << "* ";
 cout << endl;
  
 }
-}
+} //Square
 void verticalStripe(int size) {
  
 for (int row = 1; row <= size; row++) {
@@ -35,7 +35,7 @@ cout << " ";
 cout << endl;
  
 }
-}
+} //Stripe
 void letterF(int size) {
  
 for (int row = 1; row <= size; row++) {
@@ -55,7 +55,7 @@ cout << " ";
 cout << endl;
  
 }
-}
+} //F
 void letterT(int size) {
  
 for (int row = 1; row <= size; row++) {
@@ -75,7 +75,7 @@ cout << " ";
 cout << endl;
  
 }
-}
+} //T
 void letterZ(int size) {
  
 for (int row = 1; row <= size; row++) {
@@ -89,6 +89,67 @@ cout << "* ";
 else
  
 cout << " ";
+ 
+}
+ 
+cout << endl;
+ 
+}
+} //Z
+// Function to print the letter 'A'
+void letterA(int size) {
+for (int i = 0; i < size; i++) {
+ 
+for (int j = 0; j < size; j++) {
+ 
+if (i == 0 && (j > 0 && j < size - 1)) {
+ 
+cout << "*";
+ 
+} else if (j == 0 || j == size - 1) {
+ 
+cout << "*";
+ 
+} else if (i == size / 2) {
+ 
+cout << "*";
+ 
+} else {
+ 
+cout << " ";
+ 
+}
+ 
+}
+ 
+cout << endl;
+ 
+}
+
+}
+// Function to print the letter 'R'
+void letterR(int size) {
+for (int i = 0; i < size; i++) {
+ 
+for (int j = 0; j < size; j++) {
+ 
+if (j == 0 || (i == 0 && j < size - 1) || (i == size / 2 && j < size - 1)) {
+ 
+cout << "*";
+ 
+} else if (j == size - 1 && i > 0 && i < size / 2) {
+ 
+cout << "*";
+ 
+} else if (i - j == size / 2) {
+ 
+cout << "*";
+ 
+} else {
+ 
+cout << " ";
+ 
+}
  
 }
  
@@ -121,29 +182,38 @@ cout << "Invalid size! Please enter a value between 5 and 20.\n";
  
 //Ouput the art
  
-cout << "\nSolid Square Pattern:\n";
-
+cout << "\nSolid Square Pattern:\n"; //Square
  
 solidSquare(size);
  
  
-cout << "\nVertical Stripe Pattern:\n";
+cout << "\nVertical Stripe Pattern:\n"; //Stripe
  
 verticalStripe(size);
  
  
-cout << "\nLetter F Pattern:\n";
+cout << "\nLetter F Pattern:\n"; //F
  
 letterF(size);
  
  
-cout << "\nLetter T Pattern:\n";
+cout << "\nLetter T Pattern:\n"; //T
  
 letterT(size);
  
  
-cout << "\nLetter Z Pattern:\n";
+cout << "\nLetter Z Pattern:\n"; //Z
  
 letterZ(size);
+ 
+ 
+cout << "\nLetter A Pattern:\n"; //A
+ 
+letterA(size);
+ 
+ 
+cout << "\nLetter R Pattern:\n"; //R
+ 
+letterR(size);
  return 0;
 }
