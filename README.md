@@ -1,1 +1,1 @@
-A collection of Project I did from Programming Foundations 1
+A collection of projects I did from Programming Foundations 1
