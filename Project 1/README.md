@@ -12,7 +12,7 @@ input/output	commands	and basic	numerical	calculations	in	C++. In	particular,	yo
 task	is	to	calculate	how	many	boxes	of	the	same	size	can	be	placed	inside	a	truck	for	
 shipping.
 
-
+![Local Image](truck.png)
 
 Your	program	should	do	the	following:
 
